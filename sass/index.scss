@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.tabs-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+.tabs-list li {
+    display: inline;
+    background-color: #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+.tabs-list li.active {
+    background-color: #EDE2FD;
+    color: #6200ee;
+    border-bottom: 1px solid #6200ee;
+}
+.tabs-container {
+    margin: 0 auto;
+    text-align: center;
+}
+.tabs-content{
+    display: none;
+}
