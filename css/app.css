@@ -1,0 +1,109 @@
+/* PLUGINS */
+/* BASE STYLES */
+/* LAYOUTS */
+header {
+  margin: 0 auto;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.primary-nav {
+  width: 1440px;
+  height: 35px;
+  background: #f8f8f8;
+  color: #bbbbbb;
+  display: flex;
+  justify-content: flex-end;
+}
+.primary-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.primary-nav li {
+  float: left;
+}
+.primary-nav li a {
+  display: block;
+  color: #bbbbbb;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.logo-wrapper a {
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+/* MODULES */
+nav {
+  background: #000;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.Hero {
+  background: url("../assets/hero.jpg") no-repeat center;
+  background-size: cover;
+  height: 70vh;
+  text-align: center;
+  color: #fff;
+}
+.Hero-heading {
+  font-size: 32px;
+  font-weight: 800;
+}
+.Hero-subheading {
+  font-size: 28px;
+}
+.Hero-cta {
+  background: #2fbe15;
+  color: #fff;
+  weight: 100px;
+  padding: 10px 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.tabs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.tabs-list li {
+  display: inline;
+  background-color: #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.tabs-list li.active {
+  background-color: #EDE2FD;
+  color: #6200ee;
+  border-bottom: 1px solid #6200ee;
+}
+
+.tabs-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tabs-content {
+  display: none;
+}
+
+/*# sourceMappingURL=app.css.map */
