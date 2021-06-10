@@ -2,4 +2,4 @@
 
 
 #SASS command
- sass sass/index.scss css/index.css
+ sass sass/app.sass css/app.css

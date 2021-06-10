@@ -1,0 +1,65 @@
+.FAQs 
+    background: #ffffff
+    width: 1000px
+    margin: 0 auto
+
+    &-heading
+        margin: 100px auto 50px
+        text-align: center
+        font-size: 26px
+        font-weight: bold
+        color: #222222
+        max-width: 700px
+        position: relative
+    
+    &-heading:before 
+        content: ""
+        display: block
+        width: 120px
+        height: 2px
+        background: #eeeeee
+        left: 0
+        top: 50%
+        position: absolute
+
+    &-heading:after
+        content: ""
+        display: block
+        width: 120px
+        height: 2px
+        background: #eeeeee
+        right: 0
+        top: 50%
+        position: absolute
+    &-content
+        border: 1px solid #d3d3d3
+        border-radius: 4px
+    &-ans
+        background: #fff
+        font-weight: 100
+        padding: 15px 20px 14px 20px
+        border-bottom: 1px solid #d3d3d3
+
+details>summary
+    list-style: none
+    background: #f9f9f9
+    border-bottom: 1px solid #d3d3d3
+    display: block
+    color: #1b1b1b
+    padding: 15px 20px 14px 20px
+    position: relative
+
+details
+    background: #ffffff
+summary::-webkit-details-marker 
+  display: none
+
+
+summary::after 
+  content: ' +'
+  position: absolute
+  right: 20px
+  transform: rotate(0)
+
+details[open] summary:after 
+  content: " -"

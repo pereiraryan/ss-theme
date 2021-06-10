@@ -29,6 +29,7 @@ header {
 }
 .primary-nav li a {
   display: block;
+  font-size: 14px;
   color: #bbbbbb;
   text-align: center;
   padding: 8px 10px;
@@ -36,7 +37,8 @@ header {
 }
 
 .logo-wrapper a {
-  margin: 30px 0;
+  display: block;
+  margin: 10px 0;
   padding: 30px 0;
 }
 
@@ -46,6 +48,8 @@ nav {
   text-align: center;
 }
 nav a {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 500;
   color: #fff;
   padding: 10px 20px;
   display: inline-block;
@@ -61,49 +65,222 @@ nav a {
   text-align: center;
   color: #fff;
 }
+.Hero-image {
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
 .Hero-heading {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 800;
+  margin-bottom: 20px;
 }
 .Hero-subheading {
-  font-size: 28px;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 30px;
 }
 .Hero-cta {
   background: #2fbe15;
   color: #fff;
-  weight: 100px;
-  padding: 10px 10px;
+  font-weight: 100;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 16px;
 }
 
-* {
-  box-sizing: border-box;
+.Features {
+  background: #ffffff;
+}
+.Features-heading {
+  margin: 100px auto 50px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222222;
+  max-width: 700px;
+  position: relative;
+}
+.Features-heading:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #eeeeee;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+.Features-heading:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #eeeeee;
+  right: 0;
+  top: 50%;
+  position: absolute;
 }
 
-.tabs-list {
+.Tabs-box {
+  padding: 40px 0;
+}
+.Tabs-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1b1b1b;
+  margin-bottom: 15px;
+}
+.Tabs-box p {
+  font-size: 15px;
+  font-weight: 300;
+}
+.Tabs-list {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
-.tabs-list li {
+.Tabs-list li {
   display: inline;
-  background-color: #ccc;
-  padding: 10px 20px;
+  color: #4285f4;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 20px;
+  pointer-bottom: 5px;
   cursor: pointer;
 }
-.tabs-list li.active {
-  background-color: #EDE2FD;
-  color: #6200ee;
-  border-bottom: 1px solid #6200ee;
+.Tabs-list li.active {
+  color: #1b1b1b;
+  border-bottom: 2px solid #2385e8;
 }
-
-.tabs-container {
+.Tabs-container {
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
+  width: 1000px;
+}
+.Tabs-content {
+  display: none;
+}
+.Tabs-content article {
+  display: flex;
+}
+.Tabs-content figure {
+  flex: 1;
+}
+.Tabs-block {
+  margin-top: 100px;
 }
 
-.tabs-content {
+.Plans {
+  background: #f8f8f8;
+}
+.Plans-heading {
+  margin: 100px auto 50px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222222;
+  max-width: 700px;
+  position: relative;
+}
+.Plans-heading:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #eeeeee;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+.Plans-heading:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #eeeeee;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.FAQs {
+  background: #ffffff;
+  width: 1000px;
+  margin: 0 auto;
+}
+.FAQs-heading {
+  margin: 100px auto 50px;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  color: #222222;
+  max-width: 700px;
+  position: relative;
+}
+.FAQs-heading:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #eeeeee;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+.FAQs-heading:after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: #eeeeee;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+.FAQs-content {
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+}
+.FAQs-ans {
+  background: #fff;
+  font-weight: 100;
+  padding: 15px 20px 14px 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+details > summary {
+  list-style: none;
+  background: #f9f9f9;
+  border-bottom: 1px solid #d3d3d3;
+  display: block;
+  color: #1b1b1b;
+  padding: 15px 20px 14px 20px;
+  position: relative;
+}
+
+details {
+  background: #ffffff;
+}
+
+summary::-webkit-details-marker {
   display: none;
+}
+
+summary::after {
+  content: " +";
+  position: absolute;
+  right: 20px;
+  transform: rotate(0);
+}
+
+details[open] summary:after {
+  content: " -";
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "proxima_nova", Arial, sans-serif;
 }
 
 /*# sourceMappingURL=app.css.map */
