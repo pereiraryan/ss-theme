@@ -1,6 +1,49 @@
 /* PLUGINS */
 /* BASE STYLES */
 /* LAYOUTS */
+.Footer {
+  background-color: #222;
+}
+.Footer-top {
+  padding: 80px 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+.Footer-wrapBlock {
+  display: flex;
+}
+.Footer .Block {
+  flex-basis: 33.3%;
+}
+.Footer .Block-heading {
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.Footer .Block-links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px 0;
+  color: #ffffff87;
+  padding-left: 15px;
+  list-style-type: none;
+  padding: 0;
+}
+.Footer .Block-link-anchor {
+  color: #ffffff87;
+  font-size: 15px;
+  text-decoration: none;
+}
+.Footer-bottom {
+  background-color: #000;
+  color: #ffffff8c;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
 header {
   margin: 0 auto;
 }
@@ -241,6 +284,7 @@ nav a {
 .FAQs-content {
   border: 1px solid #d3d3d3;
   border-radius: 4px;
+  margin-bottom: 100px;
 }
 .FAQs-ans {
   background: #fff;
