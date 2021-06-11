@@ -2,7 +2,7 @@
 /* BASE STYLES */
 /* LAYOUTS */
 .Footer {
-  background-color: #222;
+  background-color: #151515;
 }
 .Footer-top {
   padding: 80px 0;
@@ -37,11 +37,18 @@
   text-decoration: none;
 }
 .Footer-bottom {
-  background-color: #000;
+  background-color: #111111;
   color: #ffffff8c;
   padding: 15px 0;
   text-align: center;
-  font-size: 16px;
+}
+.Footer-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 14px;
 }
 
 header {
@@ -101,10 +108,21 @@ nav a {
   text-transform: uppercase;
 }
 
+.new-tag {
+  background: #aa1414;
+  border-radius: 16px;
+  position: relative;
+  color: #fff;
+  font-weight: 100;
+  font-size: 8px;
+  padding: 2px 5px;
+  top: -8px;
+}
+
 .Hero {
   background: url("../assets/hero.jpg") no-repeat center;
   background-size: cover;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
   color: #fff;
 }
@@ -113,7 +131,7 @@ nav a {
   margin-bottom: 20px;
 }
 .Hero-heading {
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 800;
   margin-bottom: 20px;
 }
@@ -129,6 +147,7 @@ nav a {
   text-decoration: none;
   padding: 10px 30px;
   font-size: 16px;
+  border-radius: 4px;
 }
 
 .Features {
@@ -218,7 +237,8 @@ nav a {
   background: #f8f8f8;
 }
 .Plans-heading {
-  margin: 100px auto 50px;
+  margin: 0 auto;
+  padding: 50px 0;
   text-align: center;
   font-size: 26px;
   font-weight: bold;
@@ -245,6 +265,84 @@ nav a {
   right: 0;
   top: 50%;
   position: absolute;
+}
+.Plans-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 55px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.Plan {
+  border-top: 4px solid #dc3e15;
+  border-right: 1px solid #ededed;
+  border-left: none;
+}
+.Plan-name {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20;
+  background: #2b2b2b;
+  padding: 20px 15px;
+  border-right: 1px solid #3a3a3a;
+  border-left: none;
+}
+.Plan-price {
+  color: #ff9852;
+  background: #212121;
+  font-size: 24px;
+  padding: 30px 15px;
+  border-right: 1px solid #303030;
+  border-left: none;
+}
+.Plan-FeaturesList {
+  background: #fefdfd;
+}
+.Plan-cta {
+  color: #fff;
+  background: #0091da;
+  font-size: 16px;
+  padding: 10px 50px;
+  border: 1px solid #004ac0;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.Slider-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+  display: block;
+  text-align: center;
+  padding-bottom: 35px;
+}
+.Slider-title .active {
+  color: #1b1b1b;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 1;
+}
+.Slider-title span {
+  opacity: 0.5;
+}
+
+.FeaturesList {
+  font-weight: bold;
+  padding: 30px 15px;
+}
+.FeaturesList span {
+  font-weight: 100;
+  display: block;
+}
+
+.Features-icon {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0 0 0 15px;
+}
+.Features-icon figure img {
+  width: 48px;
+  height: 48px;
 }
 
 .FAQs {

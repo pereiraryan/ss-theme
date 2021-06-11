@@ -1,9 +1,11 @@
 
 .Plans
     background: #f8f8f8
+    
 
     &-heading
-        margin: 100px auto 50px
+        margin: 0 auto
+        padding: 50px 0
         text-align: center
         font-size: 26px
         font-weight: bold
@@ -30,3 +32,75 @@
         right: 0
         top: 50%
         position: absolute
+    
+    &-wrapper
+        width: 1000px
+        margin: 0 auto
+        padding-bottom: 55px
+        display: grid
+        grid-template-columns: auto auto auto
+
+.Plan
+    border-top: 4px solid #dc3e15
+    border-right: 1px solid #ededed
+    border-left: none
+    
+    &-name
+        font-weight: bold
+        color: #fff
+        font-size: 20
+        background: #2b2b2b
+        padding: 20px 15px
+        border-right: 1px solid #3a3a3a 
+        border-left: none
+
+    &-price
+        color: #ff9852
+        background: #212121
+        font-size: 24px
+        padding: 30px 15px
+        border-right: 1px solid #303030
+        border-left: none
+    
+    &-FeaturesList
+        background: #fefdfd
+    
+    &-cta
+        color: #fff
+        background: #0091da
+        font-size: 16px
+        padding: 10px 50px
+        border: 1px solid #004ac0
+        text-decoration: none
+        border-radius: 4px
+
+.Slider
+    &-wrapper
+        margin: 0 auto
+        width: 1000px
+        display: block
+        text-align: center
+        padding-bottom: 35px
+    &-title
+        .active
+            color: #1b1b1b
+            font-weight: bold
+            font-size: 16px
+            opacity: 1
+        span
+            opacity: 0.5
+.FeaturesList
+    font-weight: bold
+    padding: 30px 15px
+    
+    span
+        font-weight: 100
+        display: block
+.Features-icon
+    display: grid
+    grid-template-columns: repeat(7, 1fr)
+    padding: 0 0 0 15px
+
+    figure img
+        width: 48px
+        height: 48px
