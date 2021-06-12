@@ -1,6 +1,60 @@
 /* PLUGINS */
 /* BASE STYLES */
 /* LAYOUTS */
+header {
+  margin: 0 auto;
+}
+
+.primary-nav {
+  width: 1440px;
+  height: 35px;
+  background: #f8f8f8;
+  color: #bbbbbb;
+  display: flex;
+  justify-content: flex-end;
+}
+.primary-nav figure {
+  display: inline-block;
+}
+.primary-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.primary-nav li {
+  float: left;
+}
+.primary-nav li a {
+  display: block;
+  font-size: 14px;
+  color: #bbbbbb;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.logo-wrapper a {
+  display: block;
+  margin: 10px 0;
+  padding: 32px 0;
+}
+
+.cart-num {
+  color: #000;
+  position: relative;
+  left: -12px;
+  top: -13px;
+}
+
+.Login {
+  display: inline;
+}
+
+.Cart {
+  display: inline;
+}
+
 .Footer {
   background-color: #151515;
 }
@@ -51,63 +105,9 @@
   font-size: 14px;
 }
 
-header {
-  margin: 0 auto;
-}
-
 .container {
   width: 1000px;
   margin: 0 auto;
-}
-
-.primary-nav {
-  width: 1440px;
-  height: 35px;
-  background: #f8f8f8;
-  color: #bbbbbb;
-  display: flex;
-  justify-content: flex-end;
-}
-.primary-nav figure {
-  display: inline-block;
-}
-.primary-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.primary-nav li {
-  float: left;
-}
-.primary-nav li a {
-  display: block;
-  font-size: 14px;
-  color: #bbbbbb;
-  text-align: center;
-  padding: 8px 10px;
-  text-decoration: none;
-}
-
-.logo-wrapper a {
-  display: block;
-  margin: 10px 0;
-  padding: 30px 0;
-}
-
-.cart-num {
-  color: #000;
-  position: relative;
-  left: -12px;
-  top: -13px;
-}
-
-.Login {
-  display: inline;
-}
-
-.Cart {
-  display: inline;
 }
 
 /* MODULES */
@@ -119,7 +119,7 @@ nav a {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 500;
   color: #fff;
-  padding: 10px 20px;
+  padding: 16px 20px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -146,17 +146,17 @@ nav a {
 }
 .Hero-image {
   padding-top: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .Hero-heading {
-  font-size: 28px;
+  font-size: 26px;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .Hero-subheading {
   font-size: 20px;
   font-weight: 200;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
 }
 .Hero-cta {
   background: #2fbe15;
@@ -174,7 +174,7 @@ nav a {
 .Features-heading {
   margin: 100px auto 50px;
   text-align: center;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
   color: #222222;
   max-width: 700px;
@@ -202,13 +202,13 @@ nav a {
 }
 
 .Tabs-box {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 .Tabs-box h3 {
   font-size: 20px;
   font-weight: bold;
   color: #1b1b1b;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 .Tabs-box p {
   font-size: 15px;
@@ -225,7 +225,7 @@ nav a {
   color: #4285f4;
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 20px;
+  margin: 10px 36px;
   pointer-bottom: 5px;
   cursor: pointer;
 }
@@ -243,12 +243,11 @@ nav a {
 }
 .Tabs-content article {
   display: flex;
-}
-.Tabs-content figure {
-  flex: 1;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .Tabs-block {
-  margin-top: 100px;
+  margin-top: 105px;
 }
 
 .Plans {
@@ -396,6 +395,11 @@ nav a {
   height: 48px;
 }
 
+.Features-Bizicon {
+  grid-gap: 5px;
+  padding-left: 22px;
+}
+
 .FAQs {
   background: #ffffff;
   width: 1000px;
@@ -433,6 +437,7 @@ nav a {
 .FAQs-content {
   border: 1px solid #d3d3d3;
   border-radius: 4px;
+  background: #f9f9f9;
   margin-bottom: 100px;
 }
 .FAQs-ans {
@@ -444,7 +449,6 @@ nav a {
 
 details > summary {
   list-style: none;
-  background: #f9f9f9;
   border-bottom: 1px solid #d3d3d3;
   display: block;
   color: #1b1b1b;
@@ -452,23 +456,27 @@ details > summary {
   position: relative;
 }
 
-details {
-  background: #ffffff;
-}
-
 summary::-webkit-details-marker {
   display: none;
 }
 
 summary::after {
-  content: " +";
+  content: url("/assets/plus.svg");
+  width: 15px;
+  height: 15px;
   position: absolute;
   right: 20px;
-  transform: rotate(0);
 }
 
 details[open] summary:after {
-  content: " -";
+  content: url("/assets/remove.svg");
+  width: 15px;
+  height: 15px;
+}
+
+svg.icon {
+  width: 15px;
+  height: 15px;
 }
 
 * {

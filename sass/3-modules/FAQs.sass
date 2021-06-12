@@ -34,6 +34,7 @@
     &-content
         border: 1px solid #d3d3d3
         border-radius: 4px
+        background: #f9f9f9
         margin-bottom: 100px
     &-ans
         background: #fff
@@ -43,24 +44,29 @@
 
 details>summary
     list-style: none
-    background: #f9f9f9
     border-bottom: 1px solid #d3d3d3
     display: block
     color: #1b1b1b
     padding: 15px 20px 14px 20px
     position: relative
 
-details
-    background: #ffffff
 summary::-webkit-details-marker 
   display: none
 
 
 summary::after 
-  content: ' +'
+  content: url('/assets/plus.svg')
+  width: 15px
+  height: 15px
   position: absolute
   right: 20px
-  transform: rotate(0)
 
 details[open] summary:after 
-  content: " -"
+  content: url('/assets/remove.svg')
+  width: 15px
+  height: 15px
+
+svg.icon 
+    width: 15px
+    height: 15px
+
