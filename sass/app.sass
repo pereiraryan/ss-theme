@@ -15,14 +15,13 @@
     box-sizing: border-box
     font-family: $font-stack-serif
 
-
-
- 
+.burger-nav
+    display: none
 // ##Device = Desktops
 // ##Screen = 1281px to higher resolution desktops
 
 
-@media (min-width: 1281px) 
+@media only screen and (min-width: 1281px) 
   
 
   
@@ -33,7 +32,7 @@
 //  ##Screen = B/w 1025px to 1280px
 
 
-@media (min-width: 1025px) and (max-width: 1280px) 
+@media only screen and (min-width: 1025px) and (max-width: 1280px) 
   
 
   
@@ -44,7 +43,7 @@
 //  ##Screen = B/w 768px to 1024px
 
 
-@media (min-width: 768px) and (max-width: 1024px) 
+@media only screen and (min-width: 768px) and (max-width: 1024px) 
   
 
   
@@ -55,7 +54,7 @@
 // ##Screen = B/w 768px to 1024px
 
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
   
 
   
@@ -66,11 +65,77 @@
 //  ##Screen = B/w 481px to 767px
 
 
-@media (min-width: 481px) and (max-width: 767px) 
-  
+@media only screen and (min-width: 481px) and (max-width: 767px) 
+    .logo-wrapper a
+        padding:30px
+        margin: 0
+    .Brand-header
+        background: #1C1C1C
+    nav
+        background: #1C1C1C
+        overflow: hidden
+        position: absolute
+        right: 30px
+        top: 60px
+        display: block
+        z-index: 1000
 
-  
-
+    .burger-nav 
+        background: url(../assets/hamburger.png) no-repeat 100% center
+        display: block
+        height: 31px
+        width: 40px
+        cursor: pointer
+        float: right
+        margin-bottom: 10px
+    .nav-wrapper
+        display: none
+    .container, .Tabs-container, .Slider-wrapper, .FAQs, .Plans-wrapper, .Footer-wrapper
+        width: 100%
+    .Hero-heading, .Features-heading, .Plans-heading
+        font-size: 18px
+        color: #000
+    .Hero-subheading
+        font-size: 16px
+        color: #000
+        margin-bottom: 20px
+    .Features-heading
+        margin: 30px auto 10px
+    .Features-heading:before, .Features-heading:after, .Plans-heading:before,  .Plans-heading:after
+        content: none
+    .Features-icon 
+        grid-template-columns: repeat(7, 45px)
+    .FeaturesList
+        padding: 10px 15px
+    .Plan-FeaturesList
+        height: 580px
+    .Plan-cta
+        left: 40px
+    .Tabs-list li
+        font-size: 12px
+        margin: 10px
+    .Tabs-content article
+        display: block
+    .Tabs-box
+        padding: 0px 0 0 30px
+    .Tabs-box h3
+        font-size: 14px
+    .Tabs-content figure img
+        width: 300px
+        height: auto
+    .Tabs-box p
+        font-size: 12px
+        margin-bottom: 14px
+    .Slider-range
+        width: 200px
+    .Plans-wrapper
+        grid-template-columns: auto auto
+        width: 60%
+        margin: 0 30px
+    .FAQs
+        padding: 0 40px
+    .Footer-top
+        width: 90%
 
  
 //  ##Device = Most of the Smartphones Mobiles (Portrait)
@@ -78,3 +143,82 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) 
+    .logo-wrapper a
+        padding:30px
+        margin: 0
+    .Brand-header
+        background: #1C1C1C
+    nav
+        background: #1C1C1C
+        overflow: hidden
+        position: absolute
+        right: 30px
+        top: 30px
+        display: block
+        z-index: 1000
+
+    .burger-nav 
+        background: url(../assets/hamburger.png) no-repeat 100% center
+        display: block
+        height: 31px
+        width: 40px
+        cursor: pointer
+        float: right
+        margin-bottom: 10px
+    .nav-wrapper
+        display: none
+    .container, .Tabs-container, .Slider-wrapper, .FAQs, .Plans-wrapper, .Footer-wrapper
+        width: 100%
+    .Hero-heading, .Features-heading, .Plans-heading
+        font-size: 18px
+        color: #000
+    .Hero-subheading
+        font-size: 16px
+        color: #000
+        margin-bottom: 20px
+    .Features-heading
+        margin: 30px auto 10px
+    .Features-heading:before, .Features-heading:after, .Plans-heading:before,  .Plans-heading:after
+        content: none
+    .Features-icon 
+        grid-template-columns: repeat(7, 45px)
+    .FeaturesList
+        padding: 10px 15px
+    .Plan-FeaturesList
+        height: 580px
+    .Plan-cta
+        left: 40px
+    .Tabs-list li
+        font-size: 12px
+        margin: 10px
+    .Tabs-content article
+        display: block
+    .Tabs-box
+        padding: 0px 0 0 30px
+    .Tabs-box h3
+        font-size: 14px
+    .Tabs-content figure img
+        width: 300px
+        height: auto
+    .Tabs-box p
+        font-size: 12px
+        margin-bottom: 14px
+    .Slider-range
+        width: 200px
+    .Plans-wrapper
+        grid-template-columns: auto
+        width: 80%
+        margin: 0 30px
+    .Footer-top, .primary-nav
+        display: none
+    .Footer-wrapper
+        margin: 15px auto
+        display: block
+    .Footer-copy
+        padding-bottom: 10px
+    details > summary
+        font-size: 12px
+    .FAQs
+        padding: 0 30px
+    
+        

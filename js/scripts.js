@@ -9,3 +9,7 @@ $("#Features-tabs ul li").on("click", function () {
     $("div[id=" + $(this).attr("data-tab-type") + "]").show();
     console.log(x);
 });
+
+$(".burger-nav").on("click",function () {
+    $("header nav ul").toggleClass("open");
+}); 
