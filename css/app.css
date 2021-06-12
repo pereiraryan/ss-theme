@@ -90,10 +90,11 @@ header {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 16px 0;
-  color: #ffffff87;
+  color: #dfdfdf;
   padding-left: 15px;
   list-style-type: none;
   padding: 0;
+  cursor: pointer;
 }
 .Footer .Block-link-anchor {
   color: #dfdfdf;
@@ -102,7 +103,7 @@ header {
 }
 .Footer-bottom {
   background-color: #111111;
-  color: #ffffff8c;
+  color: #dfdfdf;
   padding: 15px 0;
   text-align: center;
 }
@@ -113,6 +114,7 @@ header {
   justify-content: space-between;
   align-content: center;
   font-size: 14px;
+  cursor: pointer;
 }
 
 .container {
@@ -362,6 +364,9 @@ nav a:hover {
   position: absolute;
   bottom: 20px;
   left: 20px;
+}
+.Plan-cta:hover {
+  background: #056fa5;
 }
 
 .Slider-range {
