@@ -135,6 +135,10 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
 }
+nav a:hover {
+  color: #333;
+  background: #fff;
+}
 
 .nav-wrapper {
   margin: 0 auto;
@@ -328,10 +332,18 @@ nav a {
 .Plan-price {
   color: #ff9852;
   background: #212121;
-  font-size: 24px;
+  font-size: 26px;
   padding: 30px 15px;
   border-right: 1px solid #303030;
   border-left: none;
+}
+.Plan-price span {
+  font-size: 18px;
+  position: relative;
+  top: -6px;
+}
+.Plan-price sub {
+  font-size: 15px;
 }
 .Plan-FeaturesList {
   background: #fefdfd;
@@ -406,7 +418,7 @@ nav a {
 
 .Features-icon {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 40px);
   padding: 0 0 0 15px;
 }
 .Features-icon figure img {
@@ -462,6 +474,7 @@ nav a {
 .FAQs-ans {
   background: #fff;
   font-weight: 100;
+  line-height: 1.6;
   padding: 15px 20px 14px 20px;
   border-bottom: 1px solid #d3d3d3;
 }
