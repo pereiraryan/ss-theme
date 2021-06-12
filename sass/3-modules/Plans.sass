@@ -1,7 +1,7 @@
 
 .Plans
     background: #f8f8f8
-    
+
 
     &-heading
         margin: 0 auto
@@ -44,6 +44,7 @@
     border-top: 4px solid #dc3e15
     border-right: 1px solid #ededed
     border-left: none
+    position: relative
     
     &-name
         font-weight: bold
@@ -64,6 +65,7 @@
     
     &-FeaturesList
         background: #fefdfd
+        height: 825px
     
     &-cta
         color: #fff
@@ -73,8 +75,36 @@
         border: 1px solid #004ac0
         text-decoration: none
         border-radius: 4px
+        width: 270px
+        text-align: center
+        position: absolute
+        bottom: 20px
+        left: 20px
 
 .Slider
+
+    &-range
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+        background: #196ecb
+        width: 700px
+        height: 2px
+        outline: none
+        border-radius: 0.25rem
+
+    &-range::-webkit-slider-thumb 
+        -webkit-appearance: none
+        appearance: none
+        width: 1.5rem
+        height: 1.5rem
+        background-color: #196ecb
+        padding: 10px
+        border: 0.25rem solid #196ecb
+        border-radius: 1rem
+        cursor: pointer
+
+
     &-wrapper
         margin: 0 auto
         width: 1000px
@@ -82,6 +112,9 @@
         text-align: center
         padding-bottom: 35px
     &-title
+        margin: 32px 0 0
+        display: flex
+        justify-content: space-around
         .active
             color: #1b1b1b
             font-weight: bold

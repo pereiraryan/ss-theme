@@ -68,6 +68,9 @@ header {
   display: flex;
   justify-content: flex-end;
 }
+.primary-nav figure {
+  display: inline-block;
+}
 .primary-nav ul {
   list-style-type: none;
   margin: 0;
@@ -90,6 +93,21 @@ header {
   display: block;
   margin: 10px 0;
   padding: 30px 0;
+}
+
+.cart-num {
+  color: #000;
+  position: relative;
+  left: -12px;
+  top: -13px;
+}
+
+.Login {
+  display: inline;
+}
+
+.Cart {
+  display: inline;
 }
 
 /* MODULES */
@@ -278,6 +296,7 @@ nav a {
   border-top: 4px solid #dc3e15;
   border-right: 1px solid #ededed;
   border-left: none;
+  position: relative;
 }
 .Plan-name {
   font-weight: bold;
@@ -298,6 +317,7 @@ nav a {
 }
 .Plan-FeaturesList {
   background: #fefdfd;
+  height: 825px;
 }
 .Plan-cta {
   color: #fff;
@@ -307,14 +327,45 @@ nav a {
   border: 1px solid #004ac0;
   text-decoration: none;
   border-radius: 4px;
+  width: 270px;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
+.Slider-range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #196ecb;
+  width: 700px;
+  height: 2px;
+  outline: none;
+  border-radius: 0.25rem;
+}
+.Slider-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #196ecb;
+  padding: 10px;
+  border: 0.25rem solid #196ecb;
+  border-radius: 1rem;
+  cursor: pointer;
+}
 .Slider-wrapper {
   margin: 0 auto;
   width: 1000px;
   display: block;
   text-align: center;
   padding-bottom: 35px;
+}
+.Slider-title {
+  margin: 32px 0 0;
+  display: flex;
+  justify-content: space-around;
 }
 .Slider-title .active {
   color: #1b1b1b;
