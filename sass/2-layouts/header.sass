@@ -1,30 +1,36 @@
 header  
     margin: 0 auto
 
-.primary-nav
-    width: 1440px
-    height: 35px
-    background: #f8f8f8
-    color: #bbbbbb
-    display: flex
-    justify-content: flex-end
+.primary
+    &-nav
+        height: 35px
+        background: #f8f8f8
+        color: #bbbbbb
+        display: flex
+        justify-content: flex-end
+    &-wrapper
+        margin: 0 auto
+        width: 1000px
+        display: flex
+        justify-content: flex-end
 
-    figure
+    &-nav figure
         display: inline-block
-    ul
+    &-nav ul
         list-style-type: none
         margin: 0
         padding: 0
         overflow: hidden
-    li
+    &-nav li
         float: left
-    li a
+    &-nav li a
         display: block
         font-size: 14px
-        color: #bbbbbb
+        color: #788698
         text-align: center
-        padding: 8px 10px
+        padding: 8px 17px
         text-decoration: none
+        border-right: 1px solid #dde3e9
 
 .logo-wrapper
     a
@@ -40,6 +46,8 @@ header
     top: -13px
 .Login
     display: inline
+.carrot
+    margin-top: 5px
 .Cart
     display: inline
     
