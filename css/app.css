@@ -652,7 +652,7 @@ svg.icon {
   }
 
   .Plan-FeaturesList {
-    height: 580px;
+    height: 655px;
   }
 
   .Plan-cta {
@@ -783,7 +783,7 @@ svg.icon {
   }
 
   .Features-icon {
-    grid-template-columns: repeat(7, 45px);
+    grid-template-columns: repeat(7, 35px);
   }
 
   .FeaturesList {
@@ -791,16 +791,17 @@ svg.icon {
   }
 
   .Plan-FeaturesList {
-    height: 580px;
+    height: 640px;
   }
 
   .Plan-cta {
-    left: 40px;
+    left: 15px;
+    width: 235px;
   }
 
   .Tabs-list li {
     font-size: 12px;
-    margin: 10px;
+    margin: 5px;
   }
 
   .Tabs-content article {
