@@ -128,10 +128,11 @@ nav {
   text-align: center;
 }
 nav a {
+  font-size: 15px;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 500;
   color: #fff;
-  padding: 16px 5px;
+  padding: 16px 8px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -161,7 +162,7 @@ nav a:hover {
 .Hero {
   background: url("../assets/hero.jpg") no-repeat center;
   background-size: cover;
-  height: 75vh;
+  height: 620px;
   text-align: center;
   color: #fff;
 }
@@ -236,6 +237,7 @@ nav a:hover {
 }
 .Tabs-box p {
   font-size: 15px;
+  line-height: 21px;
   font-weight: 300;
 }
 .Tabs-list {
@@ -349,7 +351,7 @@ nav a:hover {
 }
 .Plan-FeaturesList {
   background: #fefdfd;
-  height: 825px;
+  height: 885px;
 }
 .Plan-cta {
   color: #fff;
@@ -413,7 +415,9 @@ nav a:hover {
 }
 
 .FeaturesList {
+  font-size: 15px;
   font-weight: bold;
+  line-height: 1.6;
   padding: 30px 15px;
 }
 .FeaturesList span {
@@ -479,6 +483,7 @@ nav a:hover {
 .FAQs-ans {
   background: #fff;
   font-weight: 100;
+  font-size: 15px;
   line-height: 1.6;
   padding: 15px 20px 14px 20px;
   border-bottom: 1px solid #d3d3d3;
@@ -486,6 +491,9 @@ nav a:hover {
 
 details > summary {
   list-style: none;
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: bold;
   border-bottom: 1px solid #d3d3d3;
   display: block;
   color: #1b1b1b;
