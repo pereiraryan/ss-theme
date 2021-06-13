@@ -376,7 +376,7 @@ nav a:hover {
   -moz-appearance: none;
   appearance: none;
   background: #196ecb;
-  width: 700px;
+  width: 300px;
   height: 2px;
   outline: none;
   border-radius: 0.25rem;
@@ -384,13 +384,37 @@ nav a:hover {
 .Slider-range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #196ecb;
-  padding: 10px;
-  border: 0.25rem solid #196ecb;
+  width: 1rem;
+  height: 1rem;
+  background-color: #fff;
+  padding: 0px;
+  border: 2px solid #196ecb;
   border-radius: 1rem;
   cursor: pointer;
+}
+.Slider-dot {
+  position: relative;
+  width: 100px;
+}
+.Slider-dot:before {
+  content: "";
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #196ecb;
+  position: absolute;
+  top: -3px;
+  left: 88px;
+}
+.Slider-disabled {
+  margin-left: -3px;
+  background: #dadada;
+  width: 500px;
+}
+.Slider-disabled::-webkit-slider-thumb {
+  background-color: #f8f8f8;
+  border: 2px solid #dadada;
 }
 .Slider-wrapper {
   margin: 0 auto;
@@ -402,16 +426,15 @@ nav a:hover {
 .Slider-title {
   margin: 32px 0 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .Slider-title .active {
   color: #1b1b1b;
-  font-weight: bold;
-  font-size: 16px;
-  opacity: 1;
 }
 .Slider-title span {
-  opacity: 0.5;
+  color: #dadada;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .FeaturesList {
@@ -511,6 +534,10 @@ summary::after {
   height: 15px;
   position: absolute;
   right: 20px;
+}
+
+details:last-child, .summary-child {
+  border-bottom: none;
 }
 
 details[open] summary:after {

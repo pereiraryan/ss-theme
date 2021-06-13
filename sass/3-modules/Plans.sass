@@ -95,7 +95,7 @@
         -moz-appearance: none
         appearance: none
         background: #196ecb
-        width: 700px
+        width: 300px
         height: 2px
         outline: none
         border-radius: 0.25rem
@@ -103,14 +103,33 @@
     &-range::-webkit-slider-thumb 
         -webkit-appearance: none
         appearance: none
-        width: 1.5rem
-        height: 1.5rem
-        background-color: #196ecb
-        padding: 10px
-        border: 0.25rem solid #196ecb
+        width: 1rem
+        height: 1rem
+        background-color: #fff
+        padding: 0px
+        border: 2px solid #196ecb
         border-radius: 1rem
         cursor: pointer
-
+    &-dot
+        position: relative
+        width: 100px
+    &-dot:before  
+        content: ''
+        height: 8px
+        width: 8px
+        border-radius: 50%
+        display: inline-block
+        background: #196ecb
+        position: absolute
+        top: -3px
+        left: 88px
+    &-disabled
+        margin-left: -3px
+        background: #dadada
+        width: 500px
+    &-disabled::-webkit-slider-thumb
+        background-color: #f8f8f8
+        border: 2px solid #dadada
 
     &-wrapper
         margin: 0 auto
@@ -121,14 +140,14 @@
     &-title
         margin: 32px 0 0
         display: flex
-        justify-content: space-around
+        justify-content: space-evenly
         .active
             color: #1b1b1b
+        span
+            color: #dadada
             font-weight: bold
             font-size: 16px
-            opacity: 1
-        span
-            opacity: 0.5
+
 .FeaturesList
     font-size: 15px
     font-weight: bold
