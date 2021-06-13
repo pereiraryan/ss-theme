@@ -351,7 +351,7 @@ nav a:hover {
 }
 .Plan-FeaturesList {
   background: #fefdfd;
-  height: 885px;
+  height: 700px;
 }
 .Plan-cta {
   color: #fff;
@@ -441,7 +441,7 @@ nav a:hover {
   font-size: 15px;
   font-weight: bold;
   line-height: 1.6;
-  padding: 30px 15px;
+  padding: 15px;
 }
 .FeaturesList span {
   font-weight: 100;
@@ -459,8 +459,12 @@ nav a:hover {
 }
 
 .Features-Bizicon {
-  grid-gap: 5px;
   padding-left: 22px;
+  grid-template-columns: repeat(4, 60px);
+}
+
+.Features-Bizicon figure {
+  margin-left: 5px;
 }
 
 .FAQs {
