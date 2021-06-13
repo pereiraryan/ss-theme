@@ -132,7 +132,7 @@ nav a {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 500;
   color: #fff;
-  padding: 16px 8px;
+  padding: 16px 9px;
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -157,6 +157,10 @@ nav a:hover {
   font-size: 8px;
   padding: 2px 5px;
   top: -8px;
+}
+
+.selected {
+  background: #5a6472;
 }
 
 .Hero {
@@ -197,9 +201,9 @@ nav a:hover {
   background: #ffffff;
 }
 .Features-heading {
-  margin: 100px auto 50px;
+  margin: 112px auto 42px;
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
   font-weight: bold;
   color: #222222;
   max-width: 700px;
@@ -239,6 +243,8 @@ nav a:hover {
   font-size: 15px;
   line-height: 21px;
   font-weight: 300;
+  width: 450px;
+  max-width: 450px;
 }
 .Tabs-list {
   margin: 0;
@@ -252,7 +258,6 @@ nav a:hover {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 36px;
-  pointer-bottom: 5px;
   cursor: pointer;
 }
 .Tabs-list li.active {
@@ -260,7 +265,7 @@ nav a:hover {
   border-bottom: 2px solid #2385e8;
 }
 .Tabs-container {
-  margin: 0 auto;
+  margin: 0 auto 50px;
   text-align: left;
   width: 1000px;
 }
@@ -274,7 +279,7 @@ nav a:hover {
   flex: 1;
 }
 .Tabs-block {
-  margin-top: 105px;
+  margin-top: 112px;
 }
 
 .Plans {
@@ -282,7 +287,7 @@ nav a:hover {
 }
 .Plans-heading {
   margin: 0 auto;
-  padding: 50px 0;
+  padding: 47px 0;
   text-align: center;
   font-size: 26px;
   font-weight: bold;
@@ -329,29 +334,29 @@ nav a:hover {
   color: #fff;
   font-size: 20px;
   background: #2b2b2b;
-  padding: 20px 15px;
+  padding: 14px 30px;
   border-right: 1px solid #3a3a3a;
   border-left: none;
 }
 .Plan-price {
   color: #ff9852;
   background: #212121;
-  font-size: 26px;
-  padding: 30px 15px;
+  font-size: 32px;
+  padding: 26px 30px;
   border-right: 1px solid #303030;
   border-left: none;
 }
 .Plan-price span {
   font-size: 18px;
   position: relative;
-  top: -6px;
+  top: -10px;
 }
 .Plan-price sub {
   font-size: 15px;
 }
 .Plan-FeaturesList {
   background: #fefdfd;
-  height: 700px;
+  height: 720px;
 }
 .Plan-cta {
   color: #fff;
@@ -364,7 +369,7 @@ nav a:hover {
   width: 270px;
   text-align: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 20px;
 }
 .Plan-cta:hover {
@@ -421,10 +426,10 @@ nav a:hover {
   width: 1000px;
   display: block;
   text-align: center;
-  padding-bottom: 35px;
+  padding-bottom: 14px;
 }
 .Slider-title {
-  margin: 32px 0 0;
+  margin: 12px 65px 20px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -441,7 +446,7 @@ nav a:hover {
   font-size: 15px;
   font-weight: bold;
   line-height: 1.6;
-  padding: 15px;
+  padding: 15px 30px;
 }
 .FeaturesList span {
   font-weight: 100;
@@ -450,7 +455,7 @@ nav a:hover {
 
 .Features-icon {
   display: grid;
-  grid-template-columns: repeat(7, 40px);
+  grid-template-columns: repeat(7, 35px);
   padding: 0 0 0 15px;
 }
 .Features-icon figure img {
@@ -478,7 +483,7 @@ nav a:hover {
   font-size: 26px;
   font-weight: bold;
   color: #222222;
-  max-width: 400px;
+  max-width: 325px;
   position: relative;
 }
 .FAQs-heading:before {
@@ -595,10 +600,27 @@ svg.icon {
   }
 
   .nav-wrapper {
+    height: 0px;
+    overflow: hidden;
     display: none;
   }
 
-  .container, .Tabs-container, .Slider-wrapper, .FAQs, .Plans-wrapper, .Footer-wrapper {
+  .nav-wrapper.open {
+    height: auto;
+    clear: both;
+    width: min-content;
+    display: block;
+  }
+
+  .burger-nav:hover {
+    background: url(../assets/hamburger.png) no-repeat 100% center;
+  }
+
+  .Slider-wrapper {
+    display: none;
+  }
+
+  .container, .Tabs-container, .Plan-wrapper, .FAQs, .Footer-wrapper {
     width: 100%;
   }
 
@@ -713,11 +735,32 @@ svg.icon {
   }
 
   .nav-wrapper {
+    height: 0px;
+    overflow: hidden;
     display: none;
   }
 
-  .container, .Tabs-container, .Slider-wrapper, .FAQs, .Plans-wrapper, .Footer-wrapper {
+  .nav-wrapper.open {
+    height: auto;
+    clear: both;
+    width: min-content;
+    display: block;
+  }
+
+  .burger-nav:hover {
+    background: url(../assets/hamburger.png) no-repeat 100% center;
+  }
+
+  .Slider-wrapper {
+    display: none;
+  }
+
+  .container, .Tabs-container, .FAQs, .Plans-wrapper, .Footer-wrapper {
     width: 100%;
+  }
+
+  .Hero {
+    height: 460px;
   }
 
   .Hero-heading, .Features-heading, .Plans-heading {
@@ -780,6 +823,7 @@ svg.icon {
   .Tabs-box p {
     font-size: 12px;
     margin-bottom: 14px;
+    width: 230px;
   }
 
   .Slider-range {

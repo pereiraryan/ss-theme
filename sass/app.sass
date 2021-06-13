@@ -89,8 +89,19 @@
         float: right
         margin-bottom: 10px
     .nav-wrapper
+        height: 0px
+        overflow: hidden
         display: none
-    .container, .Tabs-container, .Slider-wrapper, .FAQs, .Plans-wrapper, .Footer-wrapper
+    .nav-wrapper.open
+        height: auto
+        clear: both
+        width: min-content
+        display: block
+    .burger-nav:hover
+        background: url(../assets/hamburger.png) no-repeat 100% center
+    .Slider-wrapper
+        display: none
+    .container, .Tabs-container, .Plan-wrapper, .FAQs, .Footer-wrapper
         width: 100%
     .Hero-heading, .Features-heading, .Plans-heading
         font-size: 18px
@@ -166,9 +177,22 @@
         float: right
         margin-bottom: 10px
     .nav-wrapper
+        height: 0px
+        overflow: hidden
         display: none
-    .container, .Tabs-container, .Slider-wrapper, .FAQs, .Plans-wrapper, .Footer-wrapper
+    .nav-wrapper.open
+        height: auto
+        clear: both
+        width: min-content
+        display: block
+    .burger-nav:hover
+        background: url(../assets/hamburger.png) no-repeat 100% center
+    .Slider-wrapper
+        display: none
+    .container, .Tabs-container, .FAQs, .Plans-wrapper, .Footer-wrapper
         width: 100%
+    .Hero
+        height: 460px
     .Hero-heading, .Features-heading, .Plans-heading
         font-size: 18px
         color: #000
@@ -203,6 +227,7 @@
     .Tabs-box p
         font-size: 12px
         margin-bottom: 14px
+        width: 230px
     .Slider-range
         width: 200px
     .Plans-wrapper
