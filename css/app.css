@@ -5,32 +5,32 @@ header {
   margin: 0 auto;
 }
 
-.primary-nav {
+.Nav-primary {
   height: 35px;
   background: #f8f8f8;
   color: #bbbbbb;
   display: flex;
   justify-content: flex-end;
 }
-.primary-wrapper {
+.Nav-wrapper {
   margin: 0 auto;
   width: 1000px;
   display: flex;
   justify-content: flex-end;
 }
-.primary-nav figure {
+.Nav-primary figure {
   display: inline-block;
 }
-.primary-nav ul {
+.Nav-primary ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-.primary-nav li {
+.Nav-primary li {
   float: left;
 }
-.primary-nav li a {
+.Nav-primary li a {
   display: block;
   font-size: 14px;
   color: #788698;
@@ -40,13 +40,13 @@ header {
   border-right: 1px solid #dde3e9;
 }
 
-.logo-wrapper a {
+.Logo-wrapper a {
   display: block;
   margin: 10px 0;
   padding: 32px 0;
 }
 
-.cart-num {
+.Cart-num {
   color: #000;
   position: relative;
   left: -12px;
@@ -57,7 +57,7 @@ header {
   display: inline;
 }
 
-.carrot {
+.Carrot {
   margin-top: 5px;
 }
 
@@ -129,6 +129,7 @@ nav {
 }
 nav a {
   font-size: 15px;
+  width: 100%;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 500;
   color: #fff;
@@ -143,7 +144,7 @@ nav a:hover {
   background: #fff;
 }
 
-.nav-wrapper {
+.Nav-wrapper {
   margin: 0 auto;
   width: 1000px;
 }
@@ -565,12 +566,22 @@ svg.icon {
   font-family: "proxima-nova", Arial, sans-serif;
 }
 
-.burger-nav {
+.Burger-nav {
   display: none;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .Tabs-content figure img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .Tabs-content figure img {
+    width: 100%;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-  .logo-wrapper a {
+  .Logo-wrapper a {
     padding: 30px;
     margin: 0;
   }
@@ -589,7 +600,7 @@ svg.icon {
     z-index: 1000;
   }
 
-  .burger-nav {
+  .Burger-nav {
     background: url(../assets/hamburger.png) no-repeat 100% center;
     display: block;
     height: 31px;
@@ -599,20 +610,20 @@ svg.icon {
     margin-bottom: 10px;
   }
 
-  .nav-wrapper {
+  .Nav-wrapper {
     height: 0px;
     overflow: hidden;
     display: none;
   }
 
-  .nav-wrapper.open {
+  .Nav-wrapper.open {
     height: auto;
     clear: both;
     width: min-content;
     display: block;
   }
 
-  .burger-nav:hover {
+  .Burger-nav:hover {
     background: url(../assets/hamburger.png) no-repeat 100% center;
   }
 
@@ -677,7 +688,7 @@ svg.icon {
   }
 
   .Tabs-content figure img {
-    width: 300px;
+    width: 100%;
     height: auto;
   }
 
@@ -705,7 +716,7 @@ svg.icon {
   }
 }
 @media (min-width: 320px) and (max-width: 480px) {
-  .logo-wrapper a {
+  .Logo-wrapper a {
     padding: 30px;
     margin: 0;
   }
@@ -724,7 +735,7 @@ svg.icon {
     z-index: 1000;
   }
 
-  .burger-nav {
+  .Burger-nav {
     background: url(../assets/hamburger.png) no-repeat 100% center;
     display: block;
     height: 31px;
@@ -734,20 +745,20 @@ svg.icon {
     margin-bottom: 10px;
   }
 
-  .nav-wrapper {
+  .Nav-wrapper {
     height: 0px;
     overflow: hidden;
     display: none;
   }
 
-  .nav-wrapper.open {
+  .Nav-wrapper.open {
     height: auto;
     clear: both;
     width: min-content;
     display: block;
   }
 
-  .burger-nav:hover {
+  .Burger-nav:hover {
     background: url(../assets/hamburger.png) no-repeat 100% center;
   }
 
@@ -837,7 +848,7 @@ svg.icon {
     margin: 0 30px;
   }
 
-  .Footer-top, .primary-nav {
+  .Footer-top, .Nav-primary {
     display: none;
   }
 

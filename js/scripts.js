@@ -10,6 +10,6 @@ $("#Features-tabs ul li").on("click", function () {
     console.log(x);
 });
 
-$(".burger-nav").on("click",function () {
-    $(".nav-wrapper").toggleClass("open");
+$(".Burger-nav").on("click",function () {
+    $(".Nav-wrapper").toggleClass("open");
 }); 

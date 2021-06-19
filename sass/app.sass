@@ -15,7 +15,7 @@
     box-sizing: border-box
     font-family: $font-stack-serif
 
-.burger-nav
+.Burger-nav
     display: none
 // ##Device = Desktops
 // ##Screen = 1281px to higher resolution desktops
@@ -44,7 +44,8 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) 
-  
+  .Tabs-content figure img
+        width: 100%
 
   
 
@@ -55,7 +56,8 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) 
-  
+  .Tabs-content figure img
+        width: 100%
 
   
 
@@ -66,7 +68,7 @@
 
 
 @media only screen and (min-width: 481px) and (max-width: 767px) 
-    .logo-wrapper a
+    .Logo-wrapper a
         padding:30px
         margin: 0
     .Brand-header
@@ -80,7 +82,7 @@
         display: block
         z-index: 1000
 
-    .burger-nav 
+    .Burger-nav 
         background: url(../assets/hamburger.png) no-repeat 100% center
         display: block
         height: 31px
@@ -88,16 +90,16 @@
         cursor: pointer
         float: right
         margin-bottom: 10px
-    .nav-wrapper
+    .Nav-wrapper
         height: 0px
         overflow: hidden
         display: none
-    .nav-wrapper.open
+    .Nav-wrapper.open
         height: auto
         clear: both
         width: min-content
         display: block
-    .burger-nav:hover
+    .Burger-nav:hover
         background: url(../assets/hamburger.png) no-repeat 100% center
     .Slider-wrapper
         display: none
@@ -132,7 +134,7 @@
     .Tabs-box h3
         font-size: 14px
     .Tabs-content figure img
-        width: 300px
+        width: 100%
         height: auto
     .Tabs-box p
         font-size: 12px
@@ -154,7 +156,7 @@
 
 
 @media (min-width: 320px) and (max-width: 480px) 
-    .logo-wrapper a
+    .Logo-wrapper a
         padding:30px
         margin: 0
     .Brand-header
@@ -168,7 +170,7 @@
         display: block
         z-index: 1000
 
-    .burger-nav 
+    .Burger-nav 
         background: url(../assets/hamburger.png) no-repeat 100% center
         display: block
         height: 31px
@@ -176,16 +178,16 @@
         cursor: pointer
         float: right
         margin-bottom: 10px
-    .nav-wrapper
+    .Nav-wrapper
         height: 0px
         overflow: hidden
         display: none
-    .nav-wrapper.open
+    .Nav-wrapper.open
         height: auto
         clear: both
         width: min-content
         display: block
-    .burger-nav:hover
+    .Burger-nav:hover
         background: url(../assets/hamburger.png) no-repeat 100% center
     .Slider-wrapper
         display: none
@@ -235,7 +237,7 @@
         grid-template-columns: auto
         width: 80%
         margin: 0 30px
-    .Footer-top, .primary-nav
+    .Footer-top, .Nav-primary
         display: none
     .Footer-wrapper
         margin: 15px auto
